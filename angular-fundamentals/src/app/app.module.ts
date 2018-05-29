@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
+import {MailService} from './mail.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
